@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP8266 Data Display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chartCard">
+    <div class="chartBox">    
+      <canvas id="myChart" aria-label="Not Supported" role="img"></canvas>
+    </div>
+  </div>
+  <div class="index">
+    <h1>ESP8266 Sensor Data</h1>
+    <p>Address: <span id="address">Not available</span></p>
+    <p>Test: <span id="test">--</span> </p>
+    <p>Voltage: <span id="voltage">--</span> V</p>
+    <p>Current: <span id="current">--</span> A</p>
+    <p>Power: <span id="power">--</span> W</p>
+    <p>Energy: <span id="energy">--</span> kWh</p>
+    <p>Frequency: <span id="frequency">--</span> Hz</p>
+    <p>Power Factor: <span id="pf">--</span></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
